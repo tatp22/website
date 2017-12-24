@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="jquery.js"></script> 
+  <script> 
+    $(function(){
+      $("#footerincl").load("footer.html"); 
+    });
+  </script> 
 </head>
 <body>
 
@@ -28,28 +34,58 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Under Construction! Please come back later.</h1>
-  <img src="img/construction.jpeg" class="img-rounded" alt="Me" width="30%"> 
+  <h1>What I've got</h1> 
 </div>
 
 <style>
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: Lightgray;
-    color: black;
-    text-align: center;
+#grad1 {
+    height: 50px;
+    background: yellow; /* For browsers that do not support gradients */
+    background: linear-gradient(to right, red, yellow, green); /* Standard syntax (must be last) */
 }
 </style>
 
-<div class="footer">
-    <a href = "https://www.instagram.com/petertatkowski/"><i class="fa fa-instagram"></i></a>
-    <a href = "https://www.linkedin.com/in/peter-tatkowski-676443104/"><i class="fa fa-linkedin"></i>
-    <a href = "https://t.me/tatp22"><i class="fa fa-telegram"></i>
-    <a href = "https://open.spotify.com/user/tatp222"><i class="fa fa-spotify"></i>
+<div class="container">
+  <div class="row">
+    <p style="font-size:130%;">You can take a look at my work experience by looking at my <a href="docs/resume.pdf">Resume</a>. Here, you can find my work experience as well as some of my skills and my academic history.</p>
+  </div>
+  <h2 style="text-align:center;">Skills</h2>
+  <!---
+  <div class="row" id="grad1">
+    <div class="col-sm-4" style="text-align:center;vertical-align: middle;line-height: 50px;">Have Not Used In A While</div>
+    <div class="col-sm-4" style="text-align:center;vertical-align: middle;line-height: 50px;">Strong Command</div>
+    <div class="col-sm-4" style="text-align:center;vertical-align: middle;line-height: 50px;">Expert</div>
+  </div>
+  --->
+    <div class="col-sm-12">
+      <div class="col-sm-4">
+        <h4 style="text-align:center;">High Level</h4>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:green" class="label label-default label-plugin">Python3</span></p>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:green" class="label label-default label-plugin">Python2</span></p>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:LawnGreen" class="label label-default label-plugin">Latex</span></p>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:Yellow" class="label label-default label-plugin">Matlab</span></p>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:red" class="label label-default label-plugin">SQL</span></p>
+      </div>
+      <div class="col-sm-4">
+        <h4 style="text-align:center;">Low Level</h4>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:green" class="label label-default label-plugin">C++</span></p>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:green" class="label label-default label-plugin">C</span></p>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:LawnGreen" class="label label-default label-plugin">Java</span></p>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:LawnGreen" class="label label-default label-plugin">MIPS</span></p>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:Orangered" class="label label-default label-plugin">Racket</span></p>
+      </div>
+      <div class="col-sm-4">
+        <h4 style="text-align:center;">Web Dev</h4>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:Lawngreen" class="label label-default label-plugin">HTML5</span></p>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:Lawngreen" class="label label-default label-plugin">CSS</span></p>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:Lawngreen" class="label label-default label-plugin">Javascript</span></p>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:GreenYellow" class="label label-default label-plugin">Bootstrap</span></p>
+        <p style="text-align:center;"><span style="font-size: 16px; color:black; background-color:Orange" class="label label-default label-plugin">Jekyll</span></p>
+      </div>
+  </div>
 </div>
+
+<div id="footerincl"></div>
 
 </body>
 </html>

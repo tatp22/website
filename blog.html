@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="jquery.js"></script> 
+  <script> 
+    $(function(){
+      $("#footerincl").load("footer.html"); 
+    });
+  </script> 
 </head>
 <body>
 
@@ -32,24 +38,7 @@
   <img src="img/construction.jpeg" class="img-rounded" alt="Me" width="30%"> 
 </div>
 
-<style>
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: Lightgray;
-    color: black;
-    text-align: center;
-}
-</style>
-
-<div class="footer">
-    <a href = "https://www.instagram.com/petertatkowski/"><i class="fa fa-instagram"></i></a>
-    <a href = "https://www.linkedin.com/in/peter-tatkowski-676443104/"><i class="fa fa-linkedin"></i>
-    <a href = "https://t.me/tatp22"><i class="fa fa-telegram"></i>
-    <a href = "https://open.spotify.com/user/tatp222"><i class="fa fa-spotify"></i>
-</div>
+<div id="footerincl"></div>
 
 </body>
 </html>

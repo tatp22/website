@@ -8,6 +8,12 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="jquery.js"></script> 
+  <script> 
+    $(function(){
+      $("#footerincl").load("footer.html"); 
+    });
+  </script> 
 </head>
 <body>
 
@@ -28,28 +34,47 @@
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Under Construction! Please come back later.</h1>
-  <img src="img/construction.jpeg" class="img-rounded" alt="Me" width="30%"> 
+  <h1>Contact information</h1> 
 </div>
 
 <style>
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: Lightgray;
-    color: black;
+.favs {
     text-align: center;
 }
 </style>
 
-<div class="footer">
-    <a href = "https://www.instagram.com/petertatkowski/"><i class="fa fa-instagram"></i></a>
-    <a href = "https://www.linkedin.com/in/peter-tatkowski-676443104/"><i class="fa fa-linkedin"></i>
-    <a href = "https://t.me/tatp22"><i class="fa fa-telegram"></i>
-    <a href = "https://open.spotify.com/user/tatp222"><i class="fa fa-spotify"></i>
+<div class="container">
+  <div class="row">
+    <p style="text-align:center;font-size:130%;">Want to contact me? I have several modes where you can reach me.</p>
+  </div>
+  <div class="row">
+    <div class="col-sm-4">
+      <h3 style="text-align:center;">Website Related</h3>
+      <p style="text-align:center;">See anything about the website that is wrong or that could use a little bit of improvement? Shoot me an email for my website and I will try and fix it as soon as possible.</p>
+      <p style="text-align:center;"><a href="mailto:peter@tatkow.ski"> peter@tatkow.ski</a></p>
+    </div>
+    <div class="col-sm-4">
+      <h3 style="text-align:center;">Professional</h3>
+      <p style="text-align:center;">Interested in my services, or have a potential job offer that I may be interested? Reach me on one of these two emails.</p>
+      <p style="text-align:center;"><a href="mailto:tatp22@gmail.com"> tatp22@gmail.com</a></p>
+      <p style="text-align:center;"><a href="mailto:peter@tatkow.ski"> peter@tatkow.ski</a></p>
+    </div>
+    <div class="col-sm-4">
+      <h3 style="text-align:center;">Personal</h3>        
+      <p style="text-align:center;">If you want to follow me on social media, go ahead and add me here.</p>
+      <p><div class="favs">
+        <a href = "https://www.instagram.com/petertatkowski/"><i class="fa fa-instagram"></i></a>
+      <a href = "https://www.linkedin.com/in/peter-tatkowski-676443104/"><i class="fa fa-linkedin"></i></a>
+      <a href = "https://t.me/tatp22"><i class="fa fa-telegram"></i></a>
+      <a href = "https://open.spotify.com/user/tatp222"><i class="fa fa-spotify"></i></a>
+      </div></p>
+      <p style="text-align:center;">However, if all else fails, you can still email me, and I will respond there.</p>
+      <p style="text-align:center;"><a href="mailto:tatp22@gmail.com"> tatp22@gmail.com</a></p>
+    </div>
+  </div>
 </div>
+
+<div id="footerincl"></div>
 
 </body>
 </html>
